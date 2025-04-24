@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252526647439",
+    "project_id": "moksa-vms",
+    "storage_bucket": "moksa-vms.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252526647439:android:bd4fbc50b3d09c1b5978fa",
+        "android_client_info": {
+          "package_name": "ai.moksa.vms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3FVkwBIwG3yZum8_hEw30k49JvsGBtSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

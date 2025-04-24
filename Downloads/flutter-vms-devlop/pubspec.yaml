@@ -1,0 +1,73 @@
+name: vms
+description: "mokSa.ai Mobile App"
+publish_to: "none"
+version: 1.3.7+34
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.9.2
+
+  cupertino_icons: ^1.0.8
+  equatable: ^2.0.5
+  dio: ^5.7.0
+  shared_preferences: ^2.3.2
+  intl: ^0.20.1
+  fl_chart: ^0.70.0
+  salomon_bottom_bar: ^3.3.2
+  percent_indicator: ^4.2.3
+  url_launcher: ^6.1.0
+  get: ^4.6.6
+  pretty_dio_logger: ^1.4.0
+  fluttertoast: ^8.2.8
+  infinite_scroll_pagination: ^4.1.0
+  gap: ^3.0.1
+  cached_network_image: ^3.4.1
+  socket_io_client: ^3.0.2
+  firebase_core: ^3.8.0
+  firebase_analytics: ^11.3.5
+  firebase_messaging: ^15.1.6
+  flutter_local_notifications: ^18.0.1
+  device_info_plus: ^11.1.1
+  syncfusion_flutter_charts: ^28.1.39
+  jiffy: ^6.3.2
+  webview_flutter: ^4.10.0
+  flutter_dotenv: ^5.1.0
+  shimmer: ^3.0.0
+  media_kit: ^1.1.11
+  media_kit_video: ^1.2.5
+  media_kit_libs_macos_video: ^1.1.4
+  media_kit_libs_windows_video: ^1.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  package_rename: ^1.7.1
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/
+    - assets/icons/
+    - .env
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter_18pt-Black.ttf
+        - asset: assets/fonts/inter/Inter_18pt-Bold.ttf
+        - asset: assets/fonts/inter/Inter_18pt-ExtraBold.ttf
+        - asset: assets/fonts/inter/Inter_18pt-ExtraLight.ttf
+        - asset: assets/fonts/inter/Inter_18pt-Light.ttf
+        - asset: assets/fonts/inter/Inter_18pt-Medium.ttf
+        - asset: assets/fonts/inter/Inter_18pt-Regular.ttf
+        - asset: assets/fonts/inter/Inter_18pt-SemiBold.ttf
+        - asset: assets/fonts/inter/Inter_18pt-Thin.ttf

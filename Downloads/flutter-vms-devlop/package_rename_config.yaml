@@ -1,0 +1,13 @@
+package_rename_config:
+  android:
+    app_name: mokSa.ai
+    package_name: ai.moksa.vms
+    override_old_package: com.example.vms
+    lang: kotlin
+
+  ios:
+    app_name: mokSa.ai
+    bundle_name: mokSaVms
+    package_name: ai.moksa.vms
+
+#  dart run package_rename

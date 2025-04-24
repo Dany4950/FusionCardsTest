@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Define the Android Gradle Plugin version here
+        classpath 'com.android.tools.build:gradle:8.0.2'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Custom build directories
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+// Fallback compileSdkVersion
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localProperties.load(localPropertiesFile.newDataInputStream())
+}
+def compileSdkProp = localProperties.getProperty("flutter.compileSdkVersion") ?: "33"
+
+// Remove or comment out the fallback compileSdk block below
+// subprojects {
+//     afterEvaluate { project ->
+//         if (project.name == 'app') {
+//             project.android.compileSdkVersion compileSdkProp.toInteger()
+//         }
+//     }
+// }
+
+// Clean task
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
